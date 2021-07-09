@@ -4,124 +4,268 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd,
+dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  line-height:160%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  color:#333333;
-  margin: 0;
-  font-family: '標楷體', 'Times New Roman';
-  font-weight: bold;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-p {
-  margin: 10px 0 15px 0;
-  font-size:100%;
+body {
+	line-height: 1;
 }
-
-li {
-  font-size:100%;
+ol, ul {
+	list-style: none;
 }
-
-footer p {
-  color: #f2f2f2;
+blockquote, q {
+	quotes: none;
 }
-
-a {
-  text-decoration: none;
-  color: #007edf;
-  text-shadow: none;
-
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
-  -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
-  -ms-transition: text-shadow 0.5s ease;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left;
-  margin-left:auto; 
-  margin-right:auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css reset*/
+
+.wrap{
+    width: 1002px;
+    margin: 0 auto;
+  }
+  
+  .nav{
+    padding: 5px 10px;
+    background: #dcdcdc;
+  }
+  
+  .nav ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav a{
+    padding: 0 10px;
+    font-size: 18px;
+  }
+  
+  .facebook a{
+    display: block;
+    color: #00008b;
+    text-decoration: none;
+    border-right: 1px solid;
+  }
+  
+  .twitter a{
+    display: block;
+    color: #00bfff;
+    text-decoration: none;
+  }
+
+  
+  .facebook a:hover,.twitter a:hover{
+    font-weight: bold;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    display: block;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .menu{
+    display: flex;
+    align-items:center;
+  }
+  
+  .menu li{
+    text-align: center;
+  }
+  
+  .menu li a{
+    text-decoration: none;
+    color:	#66cdaa;
+    display: block;
+    border-bottom: 3px solid #fff;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  .menu li a:hover{
+    border-bottom: 3px solid #66cdaa;
+  }
+  
+  .banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    height: 346px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner h2{
+    font-size: 36px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 30px;
+    background: rgba(0,0,0,0.2);
+    width: 100vw;
+  }
+
+.course{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 10px;
 }
 
-th {
-    padding: 10px;
-    background-color:black;
-    color:white;
-}
-
-td {
+.course-item{
+  width: 280px;
   padding: 10px;
-  border: 1px solid #373737;
-}
- 
-em { font-weight:bold; }
-
-#topbar {
-  margin: 0;
-  padding: 1px;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  background-color:black;
-  color:white;
-  color:white;
-  width:95%;
-  text-align:right;
-  font-weight:bold;
+  box-shadow: 3px 3px 5px silver;
 }
 
-#content {
-  margin:10px;
-  padding:10px;
+.course-item-img{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-pre {
-  border: 1px solid #373737;
-  background-color:#dddddd;
-  color:#333333;
-  font-size:medium;
-  width:95%;
-  padding:10px;
+.course-item h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-img {
-  border: 1px solid #373737;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.course-item p{
+  line-height : 1.5;
 }
 
-.figure .caption {
-  text-align:center;
+.course-item ul{
+  list-style-type: circle;
+  padding-left: 40px;
+  line-height : 1.3;
 }
 
-#footer {
-  text-align:center;
-  font-size:small;
-  color:#666666;
+.difference{
+  margin-bottom: 50px;
+}
+
+.difference table{
+  margin: 0 auto;
+}
+
+.difference h2{
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.difference th,.difference td{
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px 75px;
+}
+
+.difference th{
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+.perfect{
+  color: #3cb371;
+}
+
+.connection{
+  background: linear-gradient(#00644b,#009771);
+  padding: 20px 30px;
+}
+
+.connection h2{
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
   margin: 10px;
+}
+
+.connection form{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.connection form textarea{
+  width: 400px;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail label{
+  color: #fff;
+  margin-top: 10px;
+}
+
+.detail input{
+  width: 450px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
   padding: 10px;
+}
+
+.detail .submitbtn{
+  align-self: flex-end;
+  width: 80px;
+  background: 	#66cdaa;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submitbtn:hover{
+  background: #00644b;
+}
+
+.footer{
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a{
+  color: red;
+}
+
+.footer a:hover{
+  color: blue;
 }
