@@ -28,7 +28,151 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body {.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header h1{
+  font-size: 80px;
+  line-height: 106px;
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.header img{
+  margin-bottom: 48px;
+}
+
+.title{
+  font-size: 32px;
+  line-height: 43px;
+  border-bottom: 1px solid black;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
+.title span{
+  font-size: 24px;
+  line-height: 32px;
+  color: #A00404;
+  padding-left: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.content{
+  font-size: 24px;
+  line-height: 36px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+}
+
+.content_push{
+  margin-bottom: 24px;
+}
+
+.profile,.education,.workep{
+  margin-bottom: 72px;
+}
+
+.workep{
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+  margin-left: 24px;
+}
+
+.work_content{
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.workep img{
+  margin: 8px 0;
+}
+
+
+
+.full{
+  background: #415165;
+  color: white;
+  padding: 24px;
+  margin-bottom: 72px;
+}
+
+.full_content{
+  width: 996px;
+  margin: 0 auto;
+}
+
+
+.full_skill_list{
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.full_skill_list li{
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+/* full標題 */
+.full_title{
+  font-size: 32px;
+  line-height: 45px;
+  border-bottom: 1px solid;
+  text-align: center;
+  padding-bottom: 8px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
+.skill .full_title{
+  margin-bottom: 40px;
+}
+
+.contact .full_title{
+  margin-bottom: 32px;
+}
+
+.full_title span{
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.full_content_list{
+  text-align: center;
+}
+
+/* contact */
+.contact{
+  margin-bottom: 0;
+}
+
+.contact ul li{
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+
+.contact img{
+  margin-right: 24px;
+}
 	line-height: 1;
 }
 ol, ul {
