@@ -1,269 +1,130 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {.container{
-  max-width: 1200px;
-  margin: 0 auto;
+.header{
+    padding-top: 48px;
+    h1{
+        font-size: 80px;
+        border-bottom: 1px solid black;
+    }
 }
 
-.header h1{
-  font-size: 80px;
-  line-height: 106px;
-  border-bottom: 2px solid black;
-  margin-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-.header img{
-  margin-bottom: 48px;
-}
-
-.title{
-  font-size: 32px;
-  line-height: 43px;
-  border-bottom: 1px solid black;
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
-}
-
-.title span{
-  font-size: 24px;
-  line-height: 32px;
-  color: #A00404;
-  padding-left: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  vertical-align: middle;
-}
-
-.content{
-  font-size: 24px;
-  line-height: 36px;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 500;
-}
-
-.content_push{
-  margin-bottom: 24px;
-}
-
-.profile,.education,.workep{
-  margin-bottom: 72px;
-}
-
-.workep{
-  border-left: 1px solid #96A9C4;
-  padding-left: 24px;
-  margin-left: 24px;
-}
-
-.work_content{
-  font-size: 20px;
-  line-height: 30px;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.workep img{
-  margin: 8px 0;
-}
-
-
-
-.full{
-  background: #415165;
-  color: white;
-  padding: 24px;
-  margin-bottom: 72px;
-}
-
-.full_content{
-  width: 996px;
-  margin: 0 auto;
-}
-
-
-.full_skill_list{
-  width: 200px;
-  margin: 0 auto;
-  padding-left: 24px;
-  border-left: 1px solid #96A9C4;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.full_skill_list li{
-  margin-bottom: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-}
-
-/* full標題 */
-.full_title{
-  font-size: 32px;
-  line-height: 45px;
-  border-bottom: 1px solid;
-  text-align: center;
-  padding-bottom: 8px;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
-}
-
-.skill .full_title{
-  margin-bottom: 40px;
-}
-
-.contact .full_title{
-  margin-bottom: 32px;
-}
-
-.full_title span{
-  font-size: 24px;
-  line-height: 32px;
-  padding-left: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.full_content_list{
-  text-align: center;
-}
-
-/* contact */
-.contact{
-  margin-bottom: 0;
-}
-
-.contact ul li{
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 16px;
-}
-
-
-.contact img{
-  margin-right: 24px;
-}
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-.block{
-display：block;
-}
-.body{
-font-size:24px;
-line-height:36px;
-}
-.mb-1{
-margin-bottom:8px;
-}
-.mb-2{
-margin-bottom:16px;
-}
-.pt-3{
-padding-top:24px;
-}
-.mb-3{
-margin-bottom:24px;
-}
-.md-5{
-margin-bottom:40px;
-}
-.mb-7{
-margin-bottom:48px;
-}
-.mb-9{
-margin-bottom:72px;
-}
-
-.title{
-	font-size:80px;
-        line-height:94px;
-	padding-bottom:16px
-	border-bottom:2px solid #000;
-}        		
 .container{
-	width:1200px;
-	margin:0 auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+.img_head{
+    padding-top: 51px;
+    padding-bottom: 48px;
+}
+.img_logo{
+    padding: 8px;
+}
+.img_tree{
+    padding-top: 8px;
+}
+h2{ 
+    display:inline;
+    padding-top: 48px;
+    font-size: 32px;
+     
+}
+ h3{
+   display:inline;
+   padding-top: 48px;
+   font-size: 24px;
+   line-height: 32px;
+   color: red;
+   
+}
+.bd{
+  border-top: 1px solid gray;
 }
 
-.subTitle{
-        font-size:32px;
-	ine-height:45px;
-	border-bottom:1px solid #000;
-	padding-bottom:8px;
+.list{
+    margin-top: 24px;
+    
+    p{
+        line-height: 36px;
+        font-size: 24px;
+    }
 }
-.subTitle span{
-        color:#A00404;
-	padding-left:16px;font-size:24px;
+.education{
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
-.subTitle-white{
-	text-align:center;
-        border-bottom:1px solid #FFFFFF;
+.content{
+    padding-top: 24px;
+    padding-bottom: 36px;
+    text-align: center;
+    color: white;
+    background: #415165 0% 0%;
+    h2{
+        font-size: 32px;
+        
+    }
+    .menu{
+      border-top: 1px solid gray;
+        padding-top: 45px;
+        ul{
+        font-size: 24px;
+	      line-height: 36px;
+	      color: #fff;
+	      border-left: 1px solid #96A9C4;
+	      margin: 0 344px 0 516px;
+        li{
+          margin: 0 24px 0 16px; 
+        }
+        
+      }
+    }
 }
-.subTitle-white span{
-        color:#FFFFFF;
+.experience{
+  padding-top: 72px;
+  padding-bottom: 96px;
+  h4{
+    padding-top: 24px;
+    font-size: 24px;
+    
 }
-.darkBlue{
-        background:#415165;
-	color:#FFFFFF;
+  .ebl{
+    margin: 0 0 0 47px;
+    border-left: 1px solid gray;  
+  .box{
+    font-size: 20px;
+    line-height: 30px;
+    }
+    h5{
+  font-size: 20px;
+  
 }
-.skills{
-        width:996px;
-	margin:0 auto;
-	padding-bottom:16px;
 }
-.skills-content{
-	width:230px;
-	margin:0 auto;
-	padding-left:24px;
-	border-left:1px solid #96A9C4
 }
-.skills-content li{
-margin-bottom:20px;
+
+
+.footer{
+    text-align: center;
+    color: white;
+    background: #415165 0% 0%;
+    padding-top: 24px;
+    h2{
+        font-size: 32px;
+    }
+    .menu{
+        border-top: 1px solid gray;
+        padding-top: 46px;
+        p{  
+            font-size: 24px;
+            line-height: 16x;
+        }
+    } 
+      ul{
+      display: flex;
+      justify-content: center;
+        li{
+          margin: 16px 0 36px 24px;
+          
+        }
+    }
+         
 }
 
 
